@@ -10,6 +10,9 @@ export default class ComponentsBuilder {
     #screen
     #layout
     #input
+    #chat
+    #status
+    #activityLog
 
     constructor() { }
 
@@ -54,7 +57,7 @@ export default class ComponentsBuilder {
             bottom: 0, height: '10%',
             inputOnFocus: true,
             padding: {
-                top: 1, 
+                top: 1,
                 left: 2
             },
             style: {
@@ -69,15 +72,65 @@ export default class ComponentsBuilder {
         return this
     }
 
+    // LAYOUT DO CHAT
+    setChatComponent() {
+        this.#chat = blessed.list({
+
+            ...this.#baseComponent(), // IMPORTA O LAYOU DO BASE COMPONENT
+            parent: this.#layout,
+            align: 'left', width: '50%',
+            height: '90%',
+            items: ['{bold}Messenger{/}']
+
+
+        })
+
+        return this
+    }
+
+    // REGISTRA QUANTOS USUÁRIOS ESTÃO LOGADOS
+    setStatusComponent() {
+        this.#status = blessed.list({
+            ...this.#baseComponent(),
+            parent: this.#layout,
+            width: '25%', height: '90%',
+            items: ['{bold}Users on Room{/}']
+
+        })
+        return this
+    }
+
+
+    // MOSTRA A ATIVIDADE DO USUÁRIO
+    setActivityLogComponent() {
+        this.#activityLog = blessed.list({
+            ...this.#baseComponent(),
+            parent: this.#layout,
+            width: '25%', height: '90%',
+            style: {
+                fg: 'yellow'
+            },
+            items: ['{bold}ActivityLog{/}']
+        })
+        return this
+    }
+
     // CRIAR METODO BUILD
     // MOSTRA A TELA E O INPUT
     build() {
         const components = {
             screen: this.#screen,
             input: this.#input,
+            chat: this.#chat,
+            activityLog: this.#activityLog,
+            status: this.#status,
+
         }
 
         return components
     }
+
+
+
 }
 
