@@ -1,4 +1,4 @@
-# <img src="media/logotype.png" width="20%"> [<img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="JavaScript Logo" width="25" Title="JavaScript" align='right'>](https://www.javascript.com/) [<img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="NodeJS Logo" width="40" Title="NodeJS" align='right'>](https://www.javascript.com/) 
+# <img src="media/logotype.png" width="200"> [<img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="JavaScript Logo" width="25" Title="JavaScript" align='right'>](https://www.javascript.com/) [<img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="NodeJS Logo" width="40" Title="NodeJS" align='right'>](https://www.javascript.com/) 
 <img src="media/ptrsc(1).jpeg" width="20%"> <img src="media/ptrsc(2).jpeg" width="20%">
 <img src="media/ptrsc(3).jpeg" width="20%"> <img src="media/view(1).gif" width="20%">
 
